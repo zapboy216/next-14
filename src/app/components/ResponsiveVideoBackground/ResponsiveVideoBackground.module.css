@@ -1,0 +1,94 @@
+.responsiveVideoBackground {
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  text-shadow: .1em .1em .5em black;
+  border-radius: 1rem;
+}
+
+.grid {
+  display: block;
+  padding: 1rem;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid h1 {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.demo1 {
+  width: 100%;
+  --overlay-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.demo1 > div {
+  height: 20rem;
+}
+
+.demo2 {
+  width: clamp(20rem, 50rem - 30vw, 100%);
+  --overlay-color: hsla(180, 50%, 50%, 0.5);
+}
+
+.demo2 > div {
+  height: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demo3 {
+  --overlay-color: hsla(60, 70%, 80%, 0.7);
+  width: 100%;
+}
+
+.demo3 > div {
+  height: 150px;
+}
+
+.demo1 h1 {
+  color: red;
+}
+
+.demo2 h1 {
+  color: white;
+}
+
+.demo3 h1 {
+  color: black;
+  text-shadow: 3px 3px 10px hsla(60, 70%, 30%, 0.8);
+}
+
+.demo4 {
+  width: 100%;
+  --overlay-color: hsla(180, 70%, 80%, 0.5);
+}
+
+.demo4 > div {
+  height: 600px;
+}
+
+.demo4 p {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: right;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px white;
+}
+
+.demo5 {
+  width: 100%;
+  --overlay-color: hsla(240, 70%, 80%, 0.5);
+}
+
+.demo5 > div {
+  aspect-ratio: 4 / 1;
+}
